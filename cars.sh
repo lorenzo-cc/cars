@@ -13,14 +13,14 @@ while true; do
   echo "2) List the cars"
   echo "3) Quit"
   printf "Enter your choice (1-3): "
-  read choice
+  read -r choice
 
   case "$choice" in
     1)
       echo "Enter the car year: "
       read -r year
       echo "Enter the car make: "
-      read make
+      read -r make
       echo "Enter the car model: "
       read -r model
 
