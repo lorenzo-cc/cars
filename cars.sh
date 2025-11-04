@@ -17,12 +17,12 @@ while true; do
 
   case "$choice" in
     1)
-      printf "Enter the car year: "
-      read year
-      printf "Enter the car make: "
+      echo "Enter the car year: "
+      read -r year
+      echo "Enter the car make: "
       read make
-      printf "Enter the car model: "
-      read model
+      echo "Enter the car model: "
+      read -r model
 
       # Build record Year:Make:Model and append
       printf "%s:%s:%s\n" "$year" "$make" "$model" >> "$inv_file"
